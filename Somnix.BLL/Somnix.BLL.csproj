@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.75.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.19.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sominix.Common\Sominix.Common.csproj" />
+    <ProjectReference Include="..\Somnix.DAL\Somnix.DAL.csproj" />
+    <ProjectReference Include="..\Somnix.DTO\Somnix.DTO.csproj" />
+    <ProjectReference Include="..\Somnix.Entity\Somnix.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="Sominix.Common/Sominix.Common.csproj" />
+  <Project Path="Somnix.BLL/Somnix.BLL.csproj" />
+  <Project Path="Somnix.DAL/Somnix.DAL.csproj" />
+  <Project Path="Somnix.DTO/Somnix.DTO.csproj" />
+  <Project Path="Somnix.Entity/Somnix.Entities.csproj" />
+  <Project Path="Somnix.IOC/Somnix.IOC.csproj" />
+  <Project Path="SomnixAppKotlinBackend/SomnixAppKotlinBackend.csproj" />
+</Solution>

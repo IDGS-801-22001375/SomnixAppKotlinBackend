@@ -1,0 +1,72 @@
+# Build
+bin/
+obj/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Test Results
+TestResults/
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# Packages
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Publish output
+publish/
+
+# Environment files
+.env
+.env.*
+
+# Secrets
+appsettings.Development.json
+secrets.json
+serviceAccountKey.json
+firebase-adminsdk*.json
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IIS Express
+.vs/config/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Temporary files
+*.tmp
+*.temp
+
+# Coverage
+coverage/
+coverage.xml
+
+# Node (si usas frontend dentro del proyecto)
+node_modules/
+npm-debug.log*
+yarn-error.log*
