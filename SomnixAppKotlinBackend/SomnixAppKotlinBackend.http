@@ -1,0 +1,96 @@
+@SomnixAppKotlinBackend_HostAddress = http://localhost:5130
+
+###
+# ==========================
+# AUTENTICACIÓN
+# ==========================
+
+###
+# REGISTRO DE USUARIO
+POST {{SomnixAppKotlinBackend_HostAddress}}/api/auth/registro
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nombre": "David Alberto Sánchez Torres",
+  "email": "david@gmail.com",
+  "password": "12345678"
+}
+
+###
+# LOGIN
+POST {{SomnixAppKotlinBackend_HostAddress}}/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "david@gmail.com",
+  "password": "12345678"
+}
+
+###
+# ==========================
+# RUTAS
+# ==========================
+
+###
+# OBTENER TODAS LAS RUTAS
+GET {{SomnixAppKotlinBackend_HostAddress}}/api/rutas
+Accept: application/json
+
+###
+# OBTENER RUTA POR ID
+GET {{SomnixAppKotlinBackend_HostAddress}}/api/rutas/-OwdCwCk3E_XK_NOgtTB
+Accept: application/json
+
+###
+# CREAR RUTA
+POST {{SomnixAppKotlinBackend_HostAddress}}/api/rutas
+Content-Type: application/json
+Accept: application/json
+
+{
+  "usuarioId": "-Owboc6MYSsq8ng1WWBM",
+  "nombre": "Ruta Brain",
+  "origen": "Guanajuato",
+  "destino": "Guadalajara",
+  "distanciaKm": 222.5,
+  "duracionMinutos": 210,
+  "estado": "Pendiente"
+}
+
+###
+# ACTUALIZAR RUTA
+PUT {{SomnixAppKotlinBackend_HostAddress}}/api/rutas/-OwdCwCk3E_XK_NOgtTB
+Content-Type: application/json
+Accept: application/json
+
+{
+  "usuarioId": "-Owboc6MYSsq8ng1WWBM",
+  "nombre": "Ruta Brain Actualizada",
+  "origen": "Guadalajara",
+  "destino": "Guanajuato",
+  "distanciaKm": 222.5,
+  "duracionMinutos": 180,
+  "estado": "En progreso"
+}
+
+###
+# ELIMINAR RUTA
+DELETE {{SomnixAppKotlinBackend_HostAddress}}/api/rutas/-OwdCwCk3E_XK_NOgtTB
+Accept: application/json
+
+###
+# OBTENER TODAS LAS ALERTAS
+GET {{SomnixAppKotlinBackend_HostAddress}}/api/alertas
+Accept: application/json
+
+###
+# OBTENER ALERTAS POR USUARIO
+GET {{SomnixAppKotlinBackend_HostAddress}}/api/alertas/usuario/-Owboc6MYSsq8ng1WWBM
+Accept: application/json
+
+###
+# OBTENER ALERTAS POR RUTA
+GET {{SomnixAppKotlinBackend_HostAddress}}/api/alertas/ruta/-OwdU1yDsVZ9AbgcaZTu
+Accept: application/json
